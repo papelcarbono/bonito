@@ -27,6 +27,11 @@ body {
     margin: 0 auto;
 }
 
+textarea {
+    resize: none;
+
+}
+
 /* Header e Footer */
 header, footer {
     background-color: #552909;
@@ -78,6 +83,7 @@ nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
 }
 
 nav li {
@@ -115,6 +121,7 @@ nav li a:hover {
 
 .container-flex {
     display: flex;
+
 }
 
 /* Seções */
@@ -329,4 +336,21 @@ footer li img {
     footer li {
         margin: 8px 0;
     }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #fff; 
+    }
+
+    #content, .carteira-container , ul, li, p, strong{
+        background-color: #333; 
+    }
+
+    .carteira-container, h1, h2, header,.container,.menu,nav {
+        background-color: #161616;
+    }
+
+
 }

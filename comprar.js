@@ -28,10 +28,18 @@ document.getElementById('ticket-form').addEventListener('submit', function(event
 
 function GerarQRCode(data) {
     var QuickChartAPI = 'https://quickchart.io/qr?text=';
-    var conteudoQRCode = QuickChartAPI + encodeURIComponent("Total: R$ " + data);
+    var conteudoQRCode = QuickChartAPI + encodeURIComponent(data);
     document.querySelector('#QRCodeImage').src = conteudoQRCode;
 }
 
 function closeModal() {
     document.getElementById('qrModal').style.display = "none";
 }
+
+        function copiarCodigoPix() {
+            var pixCode = document.getElementById("codigoPix");
+            pixCode.select();
+            pixCode.setSelectionRange(0, 99999); // Para dispositivos móveis
+            document.execCommand("copy");
+
+        }

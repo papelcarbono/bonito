@@ -108,3 +108,20 @@ h2 {
         font-size: 0.875em;
     }
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #333;
+        color: #fff; 
+    }
+
+    #content, .carteira-container , ul, li, p, strong  {
+        background-color: #333; 
+    }
+
+    .carteira-container, h1, h2, header,.container,.menu,nav,p {
+        background-color: #161616;
+    }
+
+
+}

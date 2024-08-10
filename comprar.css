@@ -51,7 +51,7 @@ button {
 
 .modal {
     display: none;
-    position: fixed;
+    position:fixed;
     z-index: 1;
     left: 0;
     top: 0;
@@ -92,4 +92,21 @@ button {
     max-width: 250px;
     height: auto;
     margin: 20px 0;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #161616;
+        color: #fff; 
+    }
+
+    #content, .carteira-container , ul, li, p, strong {
+        background-color: #333; 
+    }
+
+    .carteira-container, h1, h2, header,.container,.menu,nav,.form-container,p {
+        background-color: #161616;
+    }
+
+
 }
