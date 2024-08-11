@@ -1,6 +1,7 @@
 $(document).ready(function() {
     $('.menu').click(function() {
         $('nav').slideToggle();
+        $(".bar").toggleClass('change');
     });
 
     function showSection(targetId) {
