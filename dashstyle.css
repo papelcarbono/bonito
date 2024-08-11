@@ -1,10 +1,24 @@
+/* Estilos Globais */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-weight: bold
+    font-weight: bold
 }
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #552909;
+    color: #333;
+    flex-direction: column;
+    margin: none;
+}
+
+
 
 /* Container */
 .container ,.container.container-flex {
